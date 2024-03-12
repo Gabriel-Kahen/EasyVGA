@@ -47,31 +47,24 @@ def bresenham(x0, y0, x1, y1):
 
 def calculate(array):
     start_time = time.time()  # Start the stopwatch
-    
     rows, cols = array.shape
-
-    # Initialize visibility counts to zero
     visibility_counts = [[0] * cols for _ in range(rows)]
-
-    # Calculate visibility for each non-blocked position
     for current_row in range(rows):
         for current_col in range(cols):
-            if array[current_row][current_col] == 0:  # Check if current position is non-blocked
+            if array[current_row][current_col] == 0:
                 for test_row in range(rows):
                     for test_col in range(cols):
-                        if array[test_row][test_col] == 0:  # Check if test position is non-blocked
-                            # Use Bresenham's line algorithm to check visibility
+                        if array[test_row][test_col] == 0:
                             line_points = bresenham(current_col, current_row, test_col, test_row)
                             blocked = False
                             for point in line_points:
                                 x, y = point
-                                if array[y][x] == -1:  # Check for blocked positions
+                                if array[y][x] == -1:
                                     blocked = True
                                     break
                             if not blocked:
                                 visibility_counts[current_row][current_col] += 1
 
-    # Update original array with visibility counts
     for current_row in range(rows):
         for current_col in range(cols):
             if array[current_row][current_col] == 0:
