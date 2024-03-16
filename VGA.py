@@ -126,7 +126,7 @@ def execute(image_path, output_path, calculate_width, threshold):
 #image_path = 'test2.png'
 image_path = "test3.png"
 output_path = 'output.png'
-calculate_width = 50
+calculate_width = 40
 threshold = 100
 
 execute(image_path, output_path, calculate_width, threshold)
