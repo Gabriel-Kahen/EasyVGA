@@ -1,6 +1,5 @@
 from PIL import Image
 import numpy as np
-import time
 from matplotlib import pyplot as plt
 from numba import jit
 
@@ -96,9 +95,14 @@ def execute(image_path, output_path, calculate_width, threshold):
     colored_image = Image.fromarray((colored_array * 255).astype('uint8'), mode='RGB')
     colored_image.save(output_path)
 
-image_path = "test3.png"
-output_path = 'output.png'
-calculate_width = 60
-threshold = 100
 
-execute(image_path, output_path, calculate_width, threshold)
+
+def main():
+    image_path = "test3.png"
+    output_path = 'output.png'
+    calculate_width = 60
+    threshold = 100
+    execute(image_path, output_path, calculate_width, threshold)
+
+if __name__ == "__main__":
+    main()
