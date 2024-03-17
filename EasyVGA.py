@@ -3,6 +3,8 @@ import numpy as np
 from matplotlib import pyplot as plt
 from numba import jit
 import osmnx as ox
+from math import radians, sin, cos, sqrt, atan2
+from scipy.spatial.distance import cdist
 
 @jit(nopython=True)
 def bresenham(x0, y0, x1, y1):
@@ -83,7 +85,7 @@ def clean(array):
     return array
 
 def execute(image_path, output_path, calculate_width, threshold):
-    print("Processing...")
+    print("Processing VGA...")
     image = Image.open(image_path)
     original_width, original_height = image.size
     image_array = np.array(image.convert("L"))
@@ -104,7 +106,20 @@ def execute(image_path, output_path, calculate_width, threshold):
 
 def save_street_network_image(max_lat, min_lat, max_lon, min_lon, filename):
     graph = ox.graph_from_bbox(max_lat, min_lat, max_lon, min_lon, network_type='all')
-    fig, ax = ox.plot_graph(graph, bgcolor='black', edge_color='white', node_color='white', node_size=500, edge_linewidth=20, show=False)
+    
+    street_width_meter = 3
+    node_size_meter = 10
+    
+    lat_distance = (max_lat - min_lat) * 50
+    lon_distance = (max_lon - min_lon) * 50
+    
+    #if this is smaller, the width should get bigger
+    
+    edge_linewidth = street_width_meter/min(lat_distance, lon_distance)
+    node_size = node_size_meter/min(lat_distance, lon_distance)
+
+
+    fig, ax = ox.plot_graph(graph, bgcolor='black', edge_color='white', node_color='white', node_size=node_size, edge_linewidth=edge_linewidth, show=False)
     plt.savefig(filename, bbox_inches='tight', pad_inches=0)
     plt.close(fig)
 
@@ -118,9 +133,13 @@ def main():
         width = int(input("Width: "))
         
         image_path = "street.png"
+        print("Loading streets...")
         bounds = (min_coords[0], min_coords[1], max_coords[0], max_coords[1])
         save_street_network_image(bounds[2], bounds[0], bounds[3], bounds[1], image_path)
+        print("Streets loaded!")
         execute(image_path, output_path, width, threshold)
+    if type == "3":
+        execute("street.png", output_path, 500, threshold)
     else:
         image_path = input("Image Path: ")
         width = int(input("Width: "))
