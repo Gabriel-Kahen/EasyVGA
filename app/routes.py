@@ -1,4 +1,4 @@
-from flask import request, render_template, jsonify
+from flask import request, render_template
 from app import app
 from app.utils import prepare, finish, run_c_program
 import os
@@ -6,6 +6,7 @@ import numpy as np
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
+    output_file_path = None
     if request.method == 'POST':
         if 'file' not in request.files:
             return "No file uploaded"
@@ -35,6 +36,7 @@ def index():
             data = [list(map(int, line.strip().split())) for line in lines]
             array_2d = np.array(data)
             finish(array_2d)
-            return render_template('index.html', output_file_path="static/images/output.png")
 
-    return render_template('index.html')
+            output_file_path = "images/output.png"
+
+    return render_template('index.html', output_file_path=output_file_path)
