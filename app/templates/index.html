@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image Processing</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        .image-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .image-container img {
+            max-width: 45%;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
     <h1>Upload an Image</h1>
@@ -13,9 +25,21 @@
         <button type="submit">Upload</button>
     </form>
 
-    {% if output_file_path %}
-        <h2>Processed Image:</h2>
-        <img src="{{ url_for('static', filename=output_file_path) }}" alt="Processed Image">
+    {% if uploaded_file_path or output_file_path %}
+        <div class="image-container">
+            {% if uploaded_file_path %}
+                <div>
+                    <h2>Uploaded Image:</h2>
+                    <img src="{{ url_for('static', filename=uploaded_file_path) }}" alt="Uploaded Image">
+                </div>
+            {% endif %}
+            {% if output_file_path %}
+                <div>
+                    <h2>Processed Image:</h2>
+                    <img src="{{ url_for('static', filename=output_file_path) }}" alt="Processed Image">
+                </div>
+            {% endif %}
+        </div>
     {% endif %}
 </body>
 </html>

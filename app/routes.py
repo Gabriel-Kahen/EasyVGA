@@ -6,7 +6,9 @@ import numpy as np
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
+    uploaded_file_path = None
     output_file_path = None
+
     if request.method == 'POST':
         if 'file' not in request.files:
             return "No file uploaded"
@@ -16,15 +18,14 @@ def index():
             return "No file selected"
 
         if file:
-            file_path = "uploaded_image.png"
-            file.save(file_path)
+            uploaded_file_path = os.path.join('images', 'uploaded_image.png')
+            file.save(os.path.join('app', 'static', uploaded_file_path))
 
             resolution = 100
             threshold = 128
             max_range = 200
 
-            array = prepare(file_path, resolution, threshold)
-            os.remove(file_path)
+            array = prepare(os.path.join('app', 'static', uploaded_file_path), resolution, threshold)
 
             rows, cols = array.shape
             run_c_program(rows, cols, max_range, array)
@@ -39,4 +40,4 @@ def index():
 
             output_file_path = "images/output.png"
 
-    return render_template('index.html', output_file_path=output_file_path)
+    return render_template('index.html', uploaded_file_path=uploaded_file_path, output_file_path=output_file_path)
