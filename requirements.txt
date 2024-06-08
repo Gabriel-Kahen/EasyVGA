@@ -10,7 +10,6 @@ contourpy==1.2.0
 cv==1.0.0
 cycler==0.12.1
 docutils==0.20.1
-SightAnalysis_Gabriel-Kahen==0.0.1
 fiona==1.9.6
 Flask==3.0.3
 fonttools==4.49.0
