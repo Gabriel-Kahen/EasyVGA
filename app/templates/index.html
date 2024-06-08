@@ -5,20 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image Processing</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-    <style>
-        .image-container {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            margin-top: 20px;
-        }
-        .image-container img {
-            max-width: 45%;
-            height: auto;
-        }
-    </style>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
+    <div class = "Height Slider">
+        <label for="image_width">Image Width: </label>
+        <input type="range" id="image_width" name="image_width" min="10" max="500" value="200" oninput="this.nextElementSibling.value = this.value; updateImageWidth(this.value);">
+        <output>200</output> pixels
+    </div>
     <h1>Upload an Image</h1>
     <form method="POST" enctype="multipart/form-data">
         <input type="file" name="file" accept="image/*">
