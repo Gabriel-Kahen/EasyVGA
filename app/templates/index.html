@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image Processing</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
     <script src="{{ url_for('static', filename='script.js') }}"></script>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
-    <div class = "Height Slider">
+    <div class="github-link">
+        <a href="https://github.com/Gabriel-Kahen/SightAnalysis" target="_blank">
+            <img src="{{ url_for('static', filename='github_logo.png') }}" alt="GitHub Logo">
+        </a>
+    </div>
+    <div class="Height Slider">
         <label for="image_width">Image Width: </label>
         <input type="range" id="image_width" name="image_width" min="10" max="500" value="200" oninput="this.nextElementSibling.value = this.value; updateImageWidth(this.value);">
         <output>200</output> pixels
