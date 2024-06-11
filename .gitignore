@@ -1,4 +1,4 @@
 .vscode/
 build/
 app/__pycache__
-.DS_STORE
+.DS_Store
