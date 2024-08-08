@@ -40,9 +40,7 @@ The code processes input images and generates output images that highlight speci
 | <img src="test_imgs/floorplan_in.png" width="400"> | <img src="test_imgs/floorplan_out.png" width="400"> |
 
 ### Map
-- Coordinate Input: 41.8217, -72.9078
-                    41.8098, -72.8838
-                    (shown in `test_imgs/map_in.png`)
+- Coordinate Input: 41.8217, -72.9078 | 41.8098, -72.8838 | (shown in `test_imgs/map_in.png`)
 - **Output:** `test_imgs/map_out.png`
 
 | Input Image | Output Image |
