@@ -21,7 +21,7 @@ The code processes input images and generates output images that highlight speci
 
 | Input Image | Output Image |
 |-------------|--------------|
-| ![T Input](test_imgs/t_in.png) | ![T Output](test_imgs/t_out.png) |
+| <img src="test_imgs/t_in.png" width="200"> | <img src="test_imgs/t_out.png" width="200"> |
 
 ### Squares
 - **Input:** `test_imgs/squares_in.png`
@@ -29,7 +29,7 @@ The code processes input images and generates output images that highlight speci
 
 | Input Image | Output Image |
 |-------------|--------------|
-| ![Squares Input](test_imgs/squares_in.png) | ![Squares Output](test_imgs/squares_out.png) |
+| <img src="test_imgs/squares_in.png" width="200"> | <img src="test_imgs/squares_out.png" width="200"> |
 
 ### Floor Plan
 - **Input:** `test_imgs/floorplan_in.png`
@@ -37,7 +37,7 @@ The code processes input images and generates output images that highlight speci
 
 | Input Image | Output Image |
 |-------------|--------------|
-| ![Floor Plan Input](test_imgs/floorplan_in.png) | ![Floor Plan Output](test_imgs/floorplan_out.png) |
+| <img src="test_imgs/floorplan_in.png" width="200"> | <img src="test_imgs/floorplan_out.png" width="200"> |
 
 ### Map
 - **Input:** `test_imgs/map_in.png`
@@ -45,8 +45,8 @@ The code processes input images and generates output images that highlight speci
 
 | Input Image | Output Image |
 |-------------|--------------|
-| ![Map Input](test_imgs/map_in.png) | ![Map Output](test_imgs/map_out.png) |
+| <img src="test_imgs/map_in.png" width="200"> | <img src="test_imgs/map_out.png" width="200"> |
 
 ## Usage
 
-To use the code, simply run run.py
+To use the code, simply run `run.py`.
