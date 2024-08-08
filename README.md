@@ -1,6 +1,6 @@
 # Visiblity Graph Analysis Overview
 
-This code performs a simple [visiblity graph analysis](https://en.wikipedia.org/wiki/Visibility_graph_analysis). The further down on the colormap, the more visible.
+This code performs a simple [visiblity graph analysis](https://en.wikipedia.org/wiki/Visibility_graph_analysis). The further to the right on the colormap below, the more visible.
 
 ![jetcolormap](https://i.imgur.com/QLmNLR2.png)
 
