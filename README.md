@@ -1,7 +1,7 @@
 # Visiblity Graph Analysis Overview
 
 This code performs a simple [visiblity graph analysis](https://en.wikipedia.org/wiki/Visibility_graph_analysis). The further down on the colormap, the more visible.
-![jetcolormap](https://blogs.mathworks.com/images/loren/73/colormapManip_14.png)
+![jetcolormap]([https://blogs.mathworks.com/images/loren/73/colormapManip_14.png](https://www.google.com/url?sa=i&url=https%3A%2F%2Fblogs.mathworks.com%2Fsteve%2F2014%2F10%2F20%2Fa-new-colormap-for-matlab-part-2-troubles-with-rainbows%2F&psig=AOvVaw2zL0zl7y0MkDjXOJ_0u0fH&ust=1723174934711000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCJjm1YC95IcDFQAAAAAdAAAAABB_))
 
 ## Examples
 
