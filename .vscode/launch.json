@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/gabrielkahen/Desktop/code/EasyVGA",
+      "program": "/Users/gabrielkahen/Desktop/code/EasyVGA/build/Debug/outDebug"
+    }
+  ]
+}
