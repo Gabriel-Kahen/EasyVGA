@@ -4,7 +4,7 @@ The code processes input images and generates output images that highlight speci
 
 ## Examples
 
-### T
+### t intersection
 - **Input:** `test_imgs/t_in.png`
 - **Output:** `test_imgs/t_out.png`
 
