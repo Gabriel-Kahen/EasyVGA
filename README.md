@@ -21,7 +21,7 @@ The code processes input images and generates output images that highlight speci
 
 | Input Image | Output Image |
 |-------------|--------------|
-| <img src="test_imgs/t_in.png" width="200"> | <img src="test_imgs/t_out.png" width="200"> |
+| <img src="test_imgs/t_in.png" width="400"> | <img src="test_imgs/t_out.png" width="400"> |
 
 ### Squares
 - **Input:** `test_imgs/squares_in.png`
@@ -29,7 +29,7 @@ The code processes input images and generates output images that highlight speci
 
 | Input Image | Output Image |
 |-------------|--------------|
-| <img src="test_imgs/squares_in.png" width="200"> | <img src="test_imgs/squares_out.png" width="200"> |
+| <img src="test_imgs/squares_in.png" width="400"> | <img src="test_imgs/squares_out.png" width="400"> |
 
 ### Floor Plan
 - **Input:** `test_imgs/floorplan_in.png`
@@ -37,15 +37,17 @@ The code processes input images and generates output images that highlight speci
 
 | Input Image | Output Image |
 |-------------|--------------|
-| <img src="test_imgs/floorplan_in.png" width="200"> | <img src="test_imgs/floorplan_out.png" width="200"> |
+| <img src="test_imgs/floorplan_in.png" width="400"> | <img src="test_imgs/floorplan_out.png" width="400"> |
 
 ### Map
-- **Input:** `test_imgs/map_in.png`
+- Coordinate Input: 41.8217, -72.9078
+                    41.8098, -72.8838
+                    (shown in `test_imgs/map_in.png`)
 - **Output:** `test_imgs/map_out.png`
 
 | Input Image | Output Image |
 |-------------|--------------|
-| <img src="test_imgs/map_in.png" width="200"> | <img src="test_imgs/map_out.png" width="200"> |
+| <img src="test_imgs/map_in.png" width="400"> | <img src="test_imgs/map_out.png" width="400"> |
 
 ## Usage
 
