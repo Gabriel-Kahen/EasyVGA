@@ -2,14 +2,6 @@
 
 The code processes input images and generates output images that highlight specific transformations or computations. The pairs of images below demonstrate the before and after states.
 
-## Table of Contents
-- [Examples](#examples)
-- [File Descriptions](#file-descriptions)
-- [Usage](#usage)
-- [Examples](#examples)
-- [License](#license)
-
-
 ## Examples
 
 ### T
@@ -46,4 +38,5 @@ The code processes input images and generates output images that highlight speci
 
 ## Usage
 
-To use the code, simply run `run.py`.
+To use the code, simply run `run.py`. 
+I recommend [Open Street Maps] (https://www.openstreetmap.org/export) for finding coordinates, but you can use whatever you prefer.
