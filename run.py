@@ -3,6 +3,9 @@ from PIL import Image
 import numpy as np
 from matplotlib import pyplot as plt
 import os
+import osmnx as ox
+from math import radians, sin, cos, sqrt, atan2
+from scipy.spatial.distance import cdist
 
 def prepare(image_path, new_width):
     threshold = 128 #doesn't matter for black and white inputs, for colored inputs mess around with this value to get correct polarization between walls and space
@@ -63,19 +66,53 @@ def read_array_from_file(filename):
             array.append([int(x) for x in line.split()])
     return np.array(array)
 
+def save_street_network_image(max_lat, min_lat, max_lon, min_lon, filename):
+    graph = ox.graph_from_bbox(max_lat, min_lat, max_lon, min_lon, network_type='all')
+    
+    street_width_meter = 3
+    node_size_meter = 10
+    
+    lat_distance = (max_lat - min_lat) * 50
+    lon_distance = (max_lon - min_lon) * 50
+    
+    #if this is smaller, the width should get bigger
+    
+    edge_linewidth = street_width_meter/min(lat_distance, lon_distance)
+    node_size = node_size_meter/min(lat_distance, lon_distance)
+
+
+    fig, ax = ox.plot_graph(graph, bgcolor='black', edge_color='white', node_color='white', node_size=node_size, edge_linewidth=edge_linewidth, show=False)
+    plt.savefig(filename, bbox_inches='tight', pad_inches=0)
+    plt.close(fig)
+
 def run_c_program(rows, cols):
     range_val = 10 # work in progress, don't mind it
     subprocess.run(['./process', str(rows), str(cols), str(range_val), 'input.txt'])
 
-def main(image_path, new_width):
+def run(image_path, new_width):
+    print("Processing...")
     array = prepare(image_path, new_width)
     rows, cols = array.shape
     write_array_to_file(array, 'input.txt')
     run_c_program(rows, cols,)
     result_array = read_array_from_file('data.txt')
     finish(result_array)
+    print("Done!")
 
 if __name__ == "__main__":
     image_path = 'test_imgs/street.png'  # Change this to your image path
     new_width = 200
-    main(image_path, new_width)
+    type = input("Type '1' if you are using coordinates, type '2' if you are using a custom image: ")
+    if type == "1":
+        max_coords = (float(input("Max Latitude: ")), float(input("Max Longitude: ")))
+        min_coords = (float(input("Min Latitude: ")), float(input("Min Longitude: ")))
+        width = int(input("Width: "))
+        image_path = "test_imgs/street.png"
+        print("Loading streets...")
+        bounds = (min_coords[0], min_coords[1], max_coords[0], max_coords[1])
+        save_street_network_image(bounds[2], bounds[0], bounds[3], bounds[1], image_path)
+        run(image_path, width)
+    else:
+        image_path = input("Image Path: ")
+        width = int(input("Width (pixels): "))
+        run(image_path, width)
