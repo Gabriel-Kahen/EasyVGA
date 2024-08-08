@@ -16,12 +16,12 @@ The code processes input images and generates output images that highlight speci
 ## File Descriptions
 
 ### T
-- **Input:** `test_imgs/t.png`
-- **Output:** `test_imgs/t.png`
+- **Input:** `test_imgs/t_in.png`
+- **Output:** `test_imgs/t_out.png`
 
 | Input Image | Output Image |
 |-------------|--------------|
-| ![T Input](test_imgs/t.png) | ![T Output](test_imgs/t.png) |
+| ![T Input](test_imgs/t_in.png) | ![T Output](test_imgs/t_out.png) |
 
 ### Squares
 - **Input:** `test_imgs/squares_in.png`
