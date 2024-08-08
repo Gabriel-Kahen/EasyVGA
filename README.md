@@ -12,7 +12,7 @@ This code performs a simple [visiblity graph analysis](https://en.wikipedia.org/
 
 | Input Image | Output Image |
 |-------------|--------------|
-| <img src="test_imgs/t_in.png" width="200"> | <img src="test_imgs/t_out.png" width="200"> |
+| <img src="test_imgs/t_in.png" width="600"> | <img src="test_imgs/t_out.png" width="600"> |
 
 ### Squares
 - **Input:** `test_imgs/squares_in.png`
@@ -20,7 +20,7 @@ This code performs a simple [visiblity graph analysis](https://en.wikipedia.org/
 
 | Input Image | Output Image |
 |-------------|--------------|
-| <img src="test_imgs/squares_in.png" width="250"> | <img src="test_imgs/squares_out.png" width="250"> |
+| <img src="test_imgs/squares_in.png" width="600"> | <img src="test_imgs/squares_out.png" width="600"> |
 
 ### Floor Plan
 - **Input:** `test_imgs/floorplan_in.png`
@@ -28,7 +28,7 @@ This code performs a simple [visiblity graph analysis](https://en.wikipedia.org/
 
 | Input Image | Output Image |
 |-------------|--------------|
-| <img src="test_imgs/floorplan_in.png" width="300"> | <img src="test_imgs/floorplan_out.png" width="300"> |
+| <img src="test_imgs/floorplan_in.png" width="600"> | <img src="test_imgs/floorplan_out.png" width="600"> |
 
 ### Map
 - Coordinate Input: 41.8217, -72.9078 | 41.8098, -72.8838 | (shown in `test_imgs/map_in.png`)
