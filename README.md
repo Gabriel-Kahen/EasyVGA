@@ -1,4 +1,4 @@
-## Overview
+# Visiblity Graph Analysis Overview
 
 The code processes input images and generates output images that highlight specific transformations or computations. The pairs of images below demonstrate the before and after states.
 
