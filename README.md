@@ -14,13 +14,13 @@ This code performs a simple [visiblity graph analysis](https://en.wikipedia.org/
 |-------------|--------------|
 | <img src="test_imgs/four_in.png" width="600"> | <img src="test_imgs/four_out.png" width="600"> |
 
-### Squares
-- **Input:** `test_imgs/squares_in.png`
-- **Output:** `test_imgs/squares_out.png`
+### Rectangles
+- **Input:** `test_imgs/rectangles_in.png`
+- **Output:** `test_imgs/rectangles_out.png`
 
 | Input Image | Output Image |
 |-------------|--------------|
-| <img src="test_imgs/squares_in.png" width="600"> | <img src="test_imgs/squares_out.png" width="600"> |
+| <img src="test_imgs/rectangles_in.png" width="600"> | <img src="test_imgs/rectangles_out.png" width="600"> |
 
 ### Floor Plan
 - **Input:** `test_imgs/floorplan_in.png`
