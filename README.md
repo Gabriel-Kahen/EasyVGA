@@ -30,13 +30,13 @@ This code performs a simple [visiblity graph analysis](https://en.wikipedia.org/
 |-------------|--------------|
 | <img src="test_imgs/floorplan_in.png" width="600"> | <img src="test_imgs/floorplan_out.png" width="600"> |
 
-### Map
-- Coordinate Input: 40.7611, -73.6533 | 40.7490, -73.6773 | (shown in `test_imgs/map_in.png`)
-- **Output:** `test_imgs/map_out.png`
+### Streets (using coordinates)
+- Coordinate Input: 40.7611, -73.6533 | 40.7490, -73.6773 | (shown in `test_imgs/streets_in.png`)
+- **Output:** `test_imgs/streets_out.png`
 
 | Input Image | Output Image |
 |-------------|--------------|
-| <img src="test_imgs/map_in.png" width="600"> | <img src="test_imgs/map_out.png" width="400"> |
+| <img src="test_imgs/streets_in.png" width="600"> | <img src="test_imgs/streets_out.png" width="400"> |
 
 ## Usage
 
