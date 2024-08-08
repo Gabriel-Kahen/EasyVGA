@@ -47,7 +47,7 @@ The code processes input images and generates output images that highlight speci
 
 | Input Image | Output Image |
 |-------------|--------------|
-| <img src="test_imgs/map_in.png" width="400"> | <img src="test_imgs/map_out.png" width="400"> |
+| <img src="test_imgs/map_in.png" width="600"> | <img src="test_imgs/map_out.png" width="400"> |
 
 ## Usage
 
