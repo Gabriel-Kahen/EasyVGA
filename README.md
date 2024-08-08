@@ -1,19 +1,16 @@
-# Code Functionality Demonstration
+## Overview
 
-This repository showcases the functionality of a program that processes different types of input images and generates corresponding output images. The images demonstrate various transformations and computations performed by the code.
+The code processes input images and generates output images that highlight specific transformations or computations. The pairs of images below demonstrate the before and after states.
 
 ## Table of Contents
-- [Overview](#overview)
+- [Examples](#examples)
 - [File Descriptions](#file-descriptions)
 - [Usage](#usage)
 - [Examples](#examples)
 - [License](#license)
 
-## Overview
 
-The code processes input images and generates output images that highlight specific transformations or computations. The pairs of images below demonstrate the before and after states.
-
-## File Descriptions
+## Examples
 
 ### T
 - **Input:** `test_imgs/t_in.png`
