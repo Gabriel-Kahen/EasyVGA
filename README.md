@@ -1,7 +1,7 @@
 # Visiblity Graph Analysis Overview
 
 This code performs a simple [visiblity graph analysis](https://en.wikipedia.org/wiki/Visibility_graph_analysis). The further down on the colormap, the more visible.
-![jetcolormap]([URL](https://blogs.mathworks.com/images/steve/2014/parula_part_2_01.png))
+![jetcolormap](https://blogs.mathworks.com/images/steve/2014/parula_part_2_01.png)
 
 ![ Alt Text](URL)
 
@@ -42,4 +42,4 @@ This code performs a simple [visiblity graph analysis](https://en.wikipedia.org/
 ## Usage
 
 To use the code, simply run `run.py`. 
-I recommend [Open Street Maps](https://www.openstreetmap.org/export) for finding coordinates, but you can use whatever you prefer.
+I recommend [Open Street Map](https://www.openstreetmap.org/export) for finding coordinates, but you can use whatever you prefer.
