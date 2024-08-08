@@ -1,7 +1,7 @@
 # Visiblity Graph Analysis Overview
 
 This code performs a simple [visiblity graph analysis](https://en.wikipedia.org/wiki/Visibility_graph_analysis). The further down on the colormap, the more visible.
-![jetcolormap][https://blogs.mathworks.com/images/steve/2014/parula_part_2_01.png]
+![jetcolormap][(https://blogs.mathworks.com/images/loren/73/colormapManip_14.png)]
 
 ## Examples
 
