@@ -15,42 +15,38 @@ The code processes input images and generates output images that highlight speci
 
 ## File Descriptions
 
-### Floor Plan
-- **Input:** `floorplanin.png`
-- **Output:** `floorplanout.png`
+### T
+- **Input:** `test_imgs/t.png`
+- **Output:** `test_imgs/t.png`
 
 | Input Image | Output Image |
 |-------------|--------------|
-| ![Floor Plan Input](test_imgs/floorplanin.png) | ![Floor Plan Output](./path_to_your_repo/mnt/data/floorplanout.png) |
-
-### Map
-- **Input:** `mapin.png`
-- **Output:** `mapout.png`
-
-| Input Image | Output Image |
-|-------------|--------------|
-| ![Map Input](./path_to_your_repo/mnt/data/mapin.png) | ![Map Output](./path_to_your_repo/mnt/data/mapout.png) |
+| ![T Input](test_imgs/t.png) | ![T Output](test_imgs/t.png) |
 
 ### Squares
-- **Input:** `squaresin.png`
-- **Output:** `squaresout.png`
+- **Input:** `test_imgs/squares_in.png`
+- **Output:** `test_imgs/squares_out.png`
 
 | Input Image | Output Image |
 |-------------|--------------|
-| ![Squares Input](./path_to_your_repo/mnt/data/squaresin.png) | ![Squares Output](./path_to_your_repo/mnt/data/squaresout.png) |
+| ![Squares Input](test_imgs/squares_in.png) | ![Squares Output](test_imgs/squares_out.png) |
 
-### T
-- **Input:** `tin.png`
-- **Output:** `tout.png`
+### Floor Plan
+- **Input:** `test_imgs/floorplan_in.png`
+- **Output:** `test_imgs/floorplan_out.png`
 
 | Input Image | Output Image |
 |-------------|--------------|
-| ![T Input](./path_to_your_repo/mnt/data/tin.png) | ![T Output](./path_to_your_repo/mnt/data/tout.png) |
+| ![Floor Plan Input](test_imgs/floorplan_in.png) | ![Floor Plan Output](test_imgs/floorplan_out.png) |
+
+### Map
+- **Input:** `test_imgs/map_in.png`
+- **Output:** `test_imgs/map_out.png`
+
+| Input Image | Output Image |
+|-------------|--------------|
+| ![Map Input](test_imgs/map_in.png) | ![Map Output](test_imgs/map_out.png) |
 
 ## Usage
 
-To use the code, follow these steps:
-
-1. Clone the repository.
-   ```sh
-   git clone https://github.com/your_username/your_repository.git
+To use the code, simply run run.py
