@@ -36,7 +36,7 @@ This code performs a simple [visiblity graph analysis](https://en.wikipedia.org/
 
 | Input Image | Output Image |
 |-------------|--------------|
-| <img src="test_imgs/streets_in.png" width="600"> | <img src="test_imgs/streets_out.png" width="400"> |
+| <img src="test_imgs/streets_in.png" width="600"> | <img src="test_imgs/streets_out.png" width="500"> |
 
 ## Usage
 
